@@ -8,9 +8,7 @@ export const toRna = (dnaStrand) => {
     };
 
     let rnaStrand = dnaStrand.split('').map(nucleotide => {
-      console.log(nucleotide)
       nucleotide = dnaToRna[nucleotide] || dnaToRna.empty;
-      console.log(nucleotide);
       return nucleotide;
     }).join('');
     return rnaStrand;
